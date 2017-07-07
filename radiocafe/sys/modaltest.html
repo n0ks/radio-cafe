@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!-- Modal content-->
+                <div class="modal-content box">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title text-center logar esqueceu-senha">Preencha os campos abaixo</h4>
+                    </div>
+                    <div class="modal-body">
+                       
+                        <div class="row middle sg">
+                            <div class="row sg pic">
+                                <div class="col-xs-4 col-xs-offset-4">
+                                    <img src="../img/locked-1.png" alt="" class="foto">
+                                </div>
+
+                            </div>
+                            <form action="" class="form-horizontal form">
+
+                                <div class="input-group login-senha">
+                                    <span class="input-group-addon"><i class="fa fa-question "></i></span>
+                                    <input type="text" class="form-control" value="Pergunta preenchida ?" required="" disabled id="desabilitado">
+                                </div>
+
+                                <div class="input-group login-senha">
+                                    <span class="input-group-addon"><i class="fa fa-question "></i></span>
+                                    <input type="text" class="form-control" placeholder="Resposta" required="">
+                                </div>
+
+                                <div class="input-group login-senha">
+                                    <span class="input-group-addon"><i class="fa fa-lock  pass"></i></span>
+                                    <input type="password" class="form-control" placeholder="Nova Senha" required="">
+                                </div>
+
+                                <div class="input-group login-senha">
+                                    <span class="input-group-addon"><i class="fa fa-lock  pass"></i></span>
+                                    <input type="password" class="form-control" placeholder="Repita a Senha" required="">
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row base sg">
+                        <h2 class="logar esqueceu-senha"><a href="">Trocar Senha</a></h2>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+   
+
+</html>
