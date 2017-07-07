@@ -28,7 +28,7 @@ a:hover {
 
 .box {
     background-color: #071840;
-    width: 100%;
+    width: 95%;
     border-radius: 10px;
     box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, .4);
 }
@@ -76,6 +76,7 @@ a:hover {
 
 .sg {
     margin: 0;
+    padding: 0px 20px;
 }
 
 .pic {
@@ -152,15 +153,13 @@ input[type="date"]::-webkit-inner-spin-button {
     padding: 5px;
     margin: 5px;
     font-size: 12px;
-}
-
-.esqueceu-senha a {
-    color: #FFF;
+    top: 0px;
 }
 
 .bt {
-    margin: 0px 5px 12px 0px;
+    margin: 0px 0px 10px 50px;
     font-size: 0.85em;
+    diks
 }
 
 .cadastros {
