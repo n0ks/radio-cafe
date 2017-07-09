@@ -5,16 +5,26 @@
 	<meta charset="utf-8">
 	<meta content="IE=edge" http-equiv="X-UA-Compatible">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-
-	<title>Esqueceu Senha</title>
+	<title>Rádio Café - Cadastrar Horário</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="radiocafe/css/normalize.css" rel="stylesheet">
 	<link href="../css/style.css" rel="stylesheet">
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link href="/favicon.ico" rel="icon" type="image/x-icon">
-	<link href="../css/clockpicker.css" rel="stylesheet">
-	<link href="../css/standalone.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <script src="../js/clockpicker.js"></script>
+    <link rel="stylesheet" href="../css/clockpicker.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.clockpicker').clockpicker();
+        });
+        var clock = $('.form-control');
+        clock.clockpicker({
+        autoclose: true
+        });
+
+    </script>
 	
 </head>
 
@@ -42,15 +52,13 @@
 
 
 				<form action="" class="form-horizontal form">
-					<div class="input-group login-senha">
+					<div class="input-group login-senha clockpicker">
 						<span class="input-group-addon"><i class="fa fa-calendar"></i></span> <input class="form-control" data-format="dd/MM/yyyy hh:mm:ss" id="calendario" required="" type="date">
 					</div>
 
 
 					<div class="input-group clockpicker" style=" width: 110px;margin-bottom: 10px;">
-						    <script type="text/javascript">
-	                           $('.clockpicker').clockpicker();
-	                       </script>
+						   
 						<input class="form-control" type="text" value="00:00"> <span class="input-group-addon"><span class="fa fa-clock-o">
 						</span></span>
 					</div>
@@ -91,10 +99,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="../js/clockpicker.js">
-	</script> 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
-	</script> 
+
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js">
 	</script>
 </body>
