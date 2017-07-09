@@ -226,7 +226,7 @@
 				left: dialRadius + Math.sin(radian) * outerRadius - tickRadius,
 				top: dialRadius - Math.cos(radian) * outerRadius - tickRadius
 			});
-			tick.css('font-size', '120%');
+			tick.css('font-size', '110%');
 			tick.html(leadingZero(i));
 			minutesView.append(tick);
 			tick.on(mousedownEvent, mousedown);
@@ -365,10 +365,10 @@
 	ClockPicker.DEFAULTS = {
 		'default': '',       // default time, 'now' or '13:14' e.g.
 		fromnow: 0,          // set default time to * milliseconds from now (using with default = 'now')
-		placement: 'bottom', // clock popover placement
+		placement: 'top', // clock popover placement
 		align: 'left',       // popover arrow align
-		donetext: '完成',    // done button text
-		autoclose: false,    // auto close when minute is selected
+		donetext: 'OK',    // done button text
+		autoclose: true,    // auto close when minute is selected
 		twelvehour: false, // change to 12 hour AM/PM clock from 24 hour
 		vibrate: true        // vibrate the device when dragging clock hand
 	};
