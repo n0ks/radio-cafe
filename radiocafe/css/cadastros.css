@@ -81,7 +81,6 @@ a:hover {
 
 .pic {
     margin: 10px 200px 0px 400px;
-    
 }
 
 .form {
@@ -120,7 +119,6 @@ a:hover {
 .login-senha {
     padding: 2px;
     margin: 2px 30px 0px 0px;
-    
 }
 
 .input-group-addon {
@@ -135,7 +133,7 @@ input[type="text"],
 input[type="password"],
 input[type="email"],
 input[type="tel"],
-input[type="date"]{
+input[type="date"] {
     background: 0 !important;
     padding: 5px;
     border: none;
@@ -159,12 +157,11 @@ input[type="date"]::-webkit-inner-spin-button {
 .bt {
     margin: 0px 0px 10px 50px;
     font-size: 0.85em;
-    diks
 }
 
 .cadastros {
-    border: 1px rgba(255,255,255,.3) solid;
-    display:  inline-table;
+    border: 1px rgba(255, 255, 255, .3) solid;
+    display: inline-table;
     border-spacing: 2px;
 }
 
@@ -177,7 +174,6 @@ input[type="date"]::-webkit-inner-spin-button {
 #span-btn-2 {
     color: #FFF;
     font-size: 12px;
-    
 }
 
 .pull-right {
@@ -190,28 +186,59 @@ input[type="date"]::-webkit-inner-spin-button {
     width: 150px;
     border-radius: 0px;
 }
-#selecionar{
-    color: #fff;
-    margin: 0 auto;
+
+.btn#bt-tabela {
+    width: 50px;
+    border-radius: 0px;
 }
 
-.select-style select{
-    background: 0;    
-    border: none;
-    border-bottom: 1px solid #adadad;
-    border-radius: none
-}
-.select-style select:focus {
-    outline: none;
-     background: 0;
-}
 
-.pull-left{
+
+
+.pull-left {
     float: left !important;
 }
-.custom-radio{
-    margin: 0px 20px 10px 90px;
+
+
+
+.table-bordered>thead>tr>th:first-of-type {
+    text-align: center;
+    width: 70px;
+}
+
+
+
+
+.panel-table {
+    color: #fff;
+    background: rgba(199, 199, 199, 0.17);
+    text-align: center;
+}
+
+.panel-table td {
+    padding: 0px;
+}
+.panel-table #tb-max-70{
+    width: 70px;
+    text-align: center;
+}
+
+#bt-tabela {
     color: #fff;
 }
 
+.form-inline#procura-cadastro {
+    border: 1px rgba(255,255,255, .5 ) solid;
+    padding: 0px 0px 20px 10px;
+    margin: 0px 0px 35px 0px;
+}
+
+.form-inline#procura-cadastro>span {
+    color: #a5a1a1;
+    padding: 7px
+}
+
+.form-control#id-aluno {
+    margin-right: 100px;
+}
 
