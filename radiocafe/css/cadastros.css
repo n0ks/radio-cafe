@@ -28,7 +28,7 @@ a:hover {
 
 .box {
     background-color: #071840;
-    width: 100%;
+    width: 99%;
     border-radius: 10px;
     box-shadow: 5px 8px 8px 5px rgba(0, 0, 0, .4);
 }
@@ -218,11 +218,26 @@ input[type="date"]::-webkit-inner-spin-button {
 .panel-table td {
     padding: 0px;
 }
+.panel-table th {
+    text-align: center;
+}
 .panel-table #tb-max-70{
     width: 70px;
     text-align: center;
 }
 
+.panel-table#ver-aula {
+    margin: 30px;
+}
+.panel-table#ver-aula tr{
+    
+}
+table{
+    table-layout: fixed;
+}
+td{
+    width: 33%;
+}
 #bt-tabela {
     color: #fff;
 }
@@ -230,7 +245,7 @@ input[type="date"]::-webkit-inner-spin-button {
 .form-inline#procura-cadastro {
     border: 1px rgba(255,255,255, .5 ) solid;
     padding: 0px 0px 20px 10px;
-    margin: 0px 0px 35px 0px;
+    margin-bottom: 30px;
 }
 
 .form-inline#procura-cadastro>span {
@@ -241,4 +256,5 @@ input[type="date"]::-webkit-inner-spin-button {
 .form-control#id-aluno {
     margin-right: 100px;
 }
+
 

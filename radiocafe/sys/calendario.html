@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/fullcalendar.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/moment.js"></script>
+    <!--=======      
+          ###########################################################
+          https://fullcalendar.io/docs/ - Documentação do Calendário 
+          ###########################################################   
+    
+        =======-->
+    <script src="../js/fullcalendar.js"></script>
+    <script src="../js/pt-br.js"></script>
+    <script>
+        $(document).ready(function() {
+
+            // page is now ready, initialize the calendar...
+
+            $('#calendar').fullCalendar({
+                // put your options and callbacks here
+                header: {
+                    right: 'month,agendaWeek,prev,next,today'
+
+                }, // buttons for switching between views
+                events: [{
+                        title: 'Aula do Professor Louco',
+                        start: '2017-09-01T14:30:00',
+                        //            allDay: true
+                    }
+                    // other events here...
+                ],
+                locale: 'pt-br',
+                height: 600,
+                timeFormat: 'H(:mm)', // uppercase H for 24-hour clock
+             
+            })
+
+        });
+
+    </script>
+</head>
+
+
+
+<body>
+    <div class="wrapper-calendario">
+       
+        <div id="calendar">
+
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
